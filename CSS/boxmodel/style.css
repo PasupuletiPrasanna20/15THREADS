@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding-left: 350px;
+    padding-top: 250px;
+}
+
+.ProfileCard{
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid white;
+    width: 600px;
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    gap: 20px;
+    background-color: white;
+    height: 200px;
+}
+.image img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 12px solid rgb(236, 231, 232) ;
+}
+.info h2 {
+  margin: 0;
+  font-size: 24px;
+
+
+}
+
+.info p {
+  color: black;
+  margin: 10px 0 20px;
+}
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  color: gray;
+  margin-bottom: 20px;
+}
+.details span i {
+    color: rgb(144, 27, 198);
+      margin-right: 6px;
+}
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+.buttons a {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  margin bottom: 30px;;
+}
+
+.download {
+  background-color: rgb(144, 27, 198);
+  color: white;
+  gap: 10px;
+  
+}
+
+.message {
+  border: 2px solid rgb(144, 27, 198);;
+  color: rgb(144, 27, 198);;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
