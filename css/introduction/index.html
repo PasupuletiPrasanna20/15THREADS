@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS INTRO</title>
+   <style>
+    pre{background-color: black;color: white;}
+   </style>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <!--
+    CSS-cascading style sheets
+    css is used to style the structure of html webpage and make attractive.
+
+    css is three types
+    1.inline css    (style="" inside an element)
+    2.internal css  (<style> block in the <head>)
+    3.external css  (linked .css file)
+   
+    INLINE CSS-which is written in opening tag of html element using style attribute.{most priority}.
+    internal css-which is written head section by using selectors by taking style as a element.
+    external css-which is used to write in external page {more preferable}.
+
+    DRAWBACKS:
+
+    1.By using inline css we only use or write for particular element though we take same elements we have to use style for each element.
+    2.By using internal css we style all the elements with in a page by selectors not for other pages though using same elements.
+    3.By using external css we style all the elements for all pages with same element by using selectors and using <lin> tag we can add path and can use the styles same for same elements
+    in this case when we use internal css the elementt takes inline css style.over ride the style.
+
+   EXAMPLES:
+   INLINE CSS : -->
+
+   <P style="background-color: black;color: white;">Inline CSS</P>
+   <P style="background-color: black;color: white;">Inline CSS</P>
+   <P style="background-color: black;color: white;">Inline CSS</P>
+
+
+   <!--Internal css-->   
+   <pre>Internal css</pre>
+   <pre>internal css</pre>
+   <pre>internal css</pre>
+
+   <!--External Css-->
+   <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+   </ul>
+    
+  
+</body>
+</html>
