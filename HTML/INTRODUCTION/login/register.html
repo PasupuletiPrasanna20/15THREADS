@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      padding: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .register {
+      padding: 40px;
+      border-radius: 15px;
+      width: 450px;
+      border: 1px solid black;  
+    }
+    .register h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: rgb(69, 68, 68);
+    }
+
+    .input {
+      margin-bottom: 18px;
+    }
+
+    .input input {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid rgb(139, 136, 136);
+      border-radius: 8px;
+    }
+    .register-button {
+      width: 100%;
+      padding: 12px;
+      background-color: rgb(48, 85, 146);
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .register-button:hover {
+      background-color: rgb(72, 115, 171);
+    }
+
+    .text {
+      text-align: center;
+      margin-top: 15px;
+      color:grey;
+      font-size: 0.9em;
+    }
+
+    .text a {
+      color: rgb(32, 93, 128);
+      text-decoration: none;
+    }
+
+    .text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+     <div class="register">
+    <h2>Create Account</h2>
+    <form>
+      <div class="input">
+        <input type="text" placeholder="Full Name" required name="fullname">
+      </div>
+      <div class="input">
+        <input type="email" placeholder="Email Address" required name="email">
+      </div>
+      <div class="input">
+        <input type="text" placeholder="Username" required name="Username">
+      </div>
+      <div class="input">
+        <input type="password" placeholder="Password" required name="password" maxlength="8" minlength="1">
+      </div>
+      <div class="input">
+        <input type="password" placeholder="Confirm Password" required name="Confirm Password" maxlength="8" minlength="1">
+      </div>
+      <button class="register-button" type="submit">Register</button>
+    </form>
+    <div class="text">
+      Already have an account? <a href="./login.html">Login</a>
+    </div>
+  </div>
+</body>
+</html>

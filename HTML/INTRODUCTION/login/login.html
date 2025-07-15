@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+</head>
+<style>
+ *{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+ }
+ body {
+      padding-top: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+ }
+
+ .login{
+      background-color: white;
+      padding: 40px;
+      border-radius: 15px;
+      width: 400px;
+      border: 1px solid black;     
+ }
+  .login h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      
+  }
+
+ .input {
+      margin-bottom: 20px;
+      
+    }
+
+    .input input {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid rgb(56, 52, 52);
+      border-radius: 8px;
+    }
+   .forgot{
+    display: flex;
+    margin-bottom: 10px;
+    gap: 60px;
+    color: gray;
+   }
+   .forgot a {
+      color: gray;
+      text-decoration: none;
+    }
+   .forgot a:hover {
+      text-decoration: underline;
+      color: black;
+    }
+    
+   
+   .login-button {
+      width: 100%;
+      padding: 12px;
+      background-color: rgb(127, 181, 226);
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer; 
+    }
+    .login-button:hover {
+      background-color:  rgb(40, 74, 123);
+       transition: 0.3s;
+    }
+    .text {
+      text-align: center;
+      margin-top: 15px;
+      color: gray;
+      font-size: 0.9em;
+    }
+
+    .text a {
+      color: rgb(76, 107, 163);
+      text-decoration: none;
+    }
+
+    .text a:hover {
+      text-decoration: underline;
+    }
+
+
+</style>
+<body>
+    <div class="login">
+    <h2>Login</h2>
+    <form action="">
+      <div class="input">
+        <input type="text" placeholder="Username" required name="Username">
+      </div>
+      <div class="input">
+        <input type="password" placeholder="Password" required maxlength="8" minlength="1" name="password">
+      </div>
+        <div class="forgot">
+            <section>
+            <input type="checkbox" id="check">
+            <label for="check">Remember me</label>
+            </section>
+             <section>
+            <a href="">Forgot password</a>
+            </section>
+        </div>
+      <button class="login-button" type="submit">Login</button>
+    </form>
+    <div class="text">
+      Don't have an account? <a href="./registrartion.html" target="_blank">Sign up</a>
+    </div>
+  </div>
+</body>
+</html>
